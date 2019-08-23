@@ -61,7 +61,6 @@ class ViewController: UIViewController {
             case .success(let tokenInfo):
                 self?.tokenInfo = tokenInfo
                 self?.getPlaylistData()
-                self?.getPlaylistData()
             case .failure(let error):
                 print(error)
             }
@@ -113,7 +112,7 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: SongTableViewCell.identifier, for: indexPath)
         
-        guard let songCell = cell as? SongTableViewCell else { return cell }
+        guard let songCell = cell as? SongTableViewCell, songList.count >= indexPath.row else { return cell }
         
         songCell.setupCell(name: songList[indexPath.row].name, imageString: songList[indexPath.row].album.images.first!.url, isLike: songLikeList[indexPath.row])
         

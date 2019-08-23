@@ -19,14 +19,14 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPS-pw-va9">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="600x600" translatesAutoresizingMaskIntoConstraints="NO" id="ZPS-pw-va9">
                         <rect key="frame" x="20" y="10" width="80" height="79.5"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="80" id="Cci-pp-HOv"/>
                             <constraint firstAttribute="height" priority="999" constant="80" id="OKt-wv-R4f"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Label Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hL-ok-RrH">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hL-ok-RrH">
                         <rect key="frame" x="120" y="39.5" width="140" height="20.5"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="20.5" id="vkZ-Dq-UgP"/>
@@ -68,6 +68,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="600x600" width="600" height="600"/>
         <image name="heart" width="24" height="24"/>
     </resources>
 </document>

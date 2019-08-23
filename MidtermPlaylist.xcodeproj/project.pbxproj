@@ -12,6 +12,13 @@
 		74A383C5230F78AD0005BDE8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A383C3230F78AD0005BDE8 /* Main.storyboard */; };
 		74A383C7230F78AF0005BDE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74A383C6230F78AF0005BDE8 /* Assets.xcassets */; };
 		74A383CA230F78AF0005BDE8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74A383C8230F78AF0005BDE8 /* LaunchScreen.storyboard */; };
+		74A383D2230F79870005BDE8 /* PlaylistRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A383D1230F79870005BDE8 /* PlaylistRequest.swift */; };
+		74A383D4230F79B40005BDE8 /* HttpClinet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A383D3230F79B40005BDE8 /* HttpClinet.swift */; };
+		74A383D6230F8AE20005BDE8 /* PlaylistProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A383D5230F8AE20005BDE8 /* PlaylistProvider.swift */; };
+		74A383D9230F96CC0005BDE8 /* ExtensionData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A383D8230F96CC0005BDE8 /* ExtensionData.swift */; };
+		74A383DE230FAAFF0005BDE8 /* SongTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A383DC230FAAFF0005BDE8 /* SongTableViewCell.swift */; };
+		74A383DF230FAAFF0005BDE8 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A383DD230FAAFF0005BDE8 /* SongTableViewCell.xib */; };
+		74A383E1230FAB250005BDE8 /* ExtensoinTabview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A383E0230FAB250005BDE8 /* ExtensoinTabview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		74A383C6230F78AF0005BDE8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74A383C9230F78AF0005BDE8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74A383CB230F78AF0005BDE8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74A383D1230F79870005BDE8 /* PlaylistRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistRequest.swift; sourceTree = "<group>"; };
+		74A383D3230F79B40005BDE8 /* HttpClinet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClinet.swift; sourceTree = "<group>"; };
+		74A383D5230F8AE20005BDE8 /* PlaylistProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistProvider.swift; sourceTree = "<group>"; };
+		74A383D8230F96CC0005BDE8 /* ExtensionData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionData.swift; sourceTree = "<group>"; };
+		74A383DC230FAAFF0005BDE8 /* SongTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongTableViewCell.swift; sourceTree = "<group>"; };
+		74A383DD230FAAFF0005BDE8 /* SongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
+		74A383E0230FAB250005BDE8 /* ExtensoinTabview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensoinTabview.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +70,43 @@
 			children = (
 				74A383BF230F78AD0005BDE8 /* AppDelegate.swift */,
 				74A383C1230F78AD0005BDE8 /* ViewController.swift */,
+				74A383DB230FAADD0005BDE8 /* View */,
+				74A383DA230F97240005BDE8 /* Model */,
+				74A383D7230F96A10005BDE8 /* Extension */,
 				74A383C3230F78AD0005BDE8 /* Main.storyboard */,
 				74A383C6230F78AF0005BDE8 /* Assets.xcassets */,
 				74A383C8230F78AF0005BDE8 /* LaunchScreen.storyboard */,
 				74A383CB230F78AF0005BDE8 /* Info.plist */,
 			);
 			path = MidtermPlaylist;
+			sourceTree = "<group>";
+		};
+		74A383D7230F96A10005BDE8 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				74A383D8230F96CC0005BDE8 /* ExtensionData.swift */,
+				74A383E0230FAB250005BDE8 /* ExtensoinTabview.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		74A383DA230F97240005BDE8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74A383D3230F79B40005BDE8 /* HttpClinet.swift */,
+				74A383D1230F79870005BDE8 /* PlaylistRequest.swift */,
+				74A383D5230F8AE20005BDE8 /* PlaylistProvider.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74A383DB230FAADD0005BDE8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				74A383DC230FAAFF0005BDE8 /* SongTableViewCell.swift */,
+				74A383DD230FAAFF0005BDE8 /* SongTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,6 +167,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A383DF230FAAFF0005BDE8 /* SongTableViewCell.xib in Resources */,
 				74A383CA230F78AF0005BDE8 /* LaunchScreen.storyboard in Resources */,
 				74A383C7230F78AF0005BDE8 /* Assets.xcassets in Resources */,
 				74A383C5230F78AD0005BDE8 /* Main.storyboard in Resources */,
@@ -135,7 +181,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74A383E1230FAB250005BDE8 /* ExtensoinTabview.swift in Sources */,
+				74A383D6230F8AE20005BDE8 /* PlaylistProvider.swift in Sources */,
 				74A383C2230F78AD0005BDE8 /* ViewController.swift in Sources */,
+				74A383D2230F79870005BDE8 /* PlaylistRequest.swift in Sources */,
+				74A383DE230FAAFF0005BDE8 /* SongTableViewCell.swift in Sources */,
+				74A383D9230F96CC0005BDE8 /* ExtensionData.swift in Sources */,
+				74A383D4230F79B40005BDE8 /* HttpClinet.swift in Sources */,
 				74A383C0230F78AD0005BDE8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

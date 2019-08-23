@@ -12,22 +12,25 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="SongTableViewCell" customModule="MidtermPlaylist" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="SongTableViewCell" customModule="MidtermPlaylist" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="100.5"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPS-pw-va9">
-                        <rect key="frame" x="20" y="10" width="80" height="80"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPS-pw-va9">
+                        <rect key="frame" x="20" y="10" width="80" height="79.5"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="ZPS-pw-va9" secondAttribute="height" multiplier="1:1" id="Gh5-1N-Qyx"/>
-                            <constraint firstAttribute="height" constant="80" id="HqK-HU-w1a"/>
+                            <constraint firstAttribute="width" constant="80" id="Cci-pp-HOv"/>
+                            <constraint firstAttribute="height" priority="999" constant="80" id="OKt-wv-R4f"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Label Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hL-ok-RrH">
-                        <rect key="frame" x="120" y="39.5" width="140" height="21"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="249" verticalHuggingPriority="251" horizontalCompressionResistancePriority="748" text="Label Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hL-ok-RrH">
+                        <rect key="frame" x="120" y="39.5" width="140" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="vkZ-Dq-UgP"/>
+                        </constraints>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -35,8 +38,8 @@
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18l-aT-V0M">
                         <rect key="frame" x="280" y="40" width="20" height="20"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="20" id="Wa8-sf-enC"/>
-                            <constraint firstAttribute="height" constant="20" id="d3K-qC-zkW"/>
+                            <constraint firstAttribute="height" constant="20" id="LLN-p9-pCL"/>
+                            <constraint firstAttribute="width" constant="20" id="gYy-3d-0g1"/>
                         </constraints>
                         <state key="normal" title="Button" image="heart"/>
                         <connections>
@@ -45,14 +48,14 @@
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="18l-aT-V0M" firstAttribute="centerY" secondItem="ZPS-pw-va9" secondAttribute="centerY" id="01R-Sl-GXm"/>
-                    <constraint firstItem="ZPS-pw-va9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="2sb-xJ-cSC"/>
-                    <constraint firstItem="ZPS-pw-va9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="9EQ-h0-BOl"/>
-                    <constraint firstAttribute="bottom" secondItem="ZPS-pw-va9" secondAttribute="bottom" constant="10" id="BHc-Ev-dAW"/>
-                    <constraint firstItem="9hL-ok-RrH" firstAttribute="leading" secondItem="ZPS-pw-va9" secondAttribute="trailing" constant="20" id="Fs5-Yf-8fD"/>
-                    <constraint firstItem="18l-aT-V0M" firstAttribute="leading" secondItem="9hL-ok-RrH" secondAttribute="trailing" constant="20" id="PQf-pb-pKg"/>
-                    <constraint firstItem="9hL-ok-RrH" firstAttribute="centerY" secondItem="ZPS-pw-va9" secondAttribute="centerY" id="mub-mI-w8f"/>
-                    <constraint firstAttribute="trailing" secondItem="18l-aT-V0M" secondAttribute="trailing" constant="20" id="oXm-nI-5pM"/>
+                    <constraint firstItem="9hL-ok-RrH" firstAttribute="leading" secondItem="ZPS-pw-va9" secondAttribute="trailing" constant="20" id="IFs-0F-7sz"/>
+                    <constraint firstAttribute="bottom" secondItem="ZPS-pw-va9" secondAttribute="bottom" constant="10" id="R6I-Qt-ROS"/>
+                    <constraint firstItem="ZPS-pw-va9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="e6x-GJ-Z3t"/>
+                    <constraint firstItem="ZPS-pw-va9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="g2r-7O-VVS"/>
+                    <constraint firstAttribute="trailing" secondItem="18l-aT-V0M" secondAttribute="trailing" constant="20" id="oxj-4o-fs9"/>
+                    <constraint firstItem="18l-aT-V0M" firstAttribute="leading" secondItem="9hL-ok-RrH" secondAttribute="trailing" constant="20" id="pEL-cQ-Gn0"/>
+                    <constraint firstItem="18l-aT-V0M" firstAttribute="centerY" secondItem="ZPS-pw-va9" secondAttribute="centerY" id="tpD-Iz-eqw"/>
+                    <constraint firstItem="9hL-ok-RrH" firstAttribute="centerY" secondItem="ZPS-pw-va9" secondAttribute="centerY" id="uZb-2M-CbS"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -61,7 +64,7 @@
                 <outlet property="songImageView" destination="ZPS-pw-va9" id="b12-DG-mQC"/>
                 <outlet property="songNameLabel" destination="9hL-ok-RrH" id="j5Z-qi-Klf"/>
             </connections>
-            <point key="canvasLocation" x="131.8840579710145" y="172.43303571428569"/>
+            <point key="canvasLocation" x="131.8840579710145" y="172.09821428571428"/>
         </tableViewCell>
     </objects>
     <resources>

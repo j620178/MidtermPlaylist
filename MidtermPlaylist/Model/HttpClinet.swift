@@ -33,15 +33,15 @@ protocol RestAPIRequest {
     var header: [String: String] { get }
     var body: Data? { get }
     var method: String { get }
-    var endPoint: String { get }
+    var url: String { get }
 }
 
 extension RestAPIRequest {
     func makeRequest() -> URLRequest {
-        let urlString = endPoint
-        let url = URL(string: urlString)!
+        let urlString = url
+        let urlObject = URL(string: urlString)!
         
-        var request = URLRequest(url: url)
+        var request = URLRequest(url: urlObject)
         
         request.allHTTPHeaderFields = header
         request.httpMethod = method

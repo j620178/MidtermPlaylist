@@ -21,6 +21,7 @@
 		74A383DF230FAAFF0005BDE8 /* SongTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 74A383DD230FAAFF0005BDE8 /* SongTableViewCell.xib */; };
 		74A383E1230FAB250005BDE8 /* ExtensoinTabview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A383E0230FAB250005BDE8 /* ExtensoinTabview.swift */; };
 		74A383E4230FB5CE0005BDE8 /* Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74A383E3230FB5CE0005BDE8 /* Kingfisher.swift */; };
+		74CC5431230FDEF7004D2677 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CC5430230FDEF7004D2677 /* Playlist.swift */; };
 		74EEBE9A230FCD4A00C781D2 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EEBE99230FCD4A00C781D2 /* UIImage.swift */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +42,7 @@
 		74A383DD230FAAFF0005BDE8 /* SongTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SongTableViewCell.xib; sourceTree = "<group>"; };
 		74A383E0230FAB250005BDE8 /* ExtensoinTabview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensoinTabview.swift; sourceTree = "<group>"; };
 		74A383E3230FB5CE0005BDE8 /* Kingfisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kingfisher.swift; sourceTree = "<group>"; };
+		74CC5430230FDEF7004D2677 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
 		74EEBE99230FCD4A00C781D2 /* UIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		94208F8B34E6BACBCDFC21DD /* Pods-MidtermPlaylist.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermPlaylist.debug.xcconfig"; path = "Target Support Files/Pods-MidtermPlaylist/Pods-MidtermPlaylist.debug.xcconfig"; sourceTree = "<group>"; };
 		949FE7B4ACC43FBCC15B41E7 /* Pods-MidtermPlaylist.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MidtermPlaylist.release.xcconfig"; path = "Target Support Files/Pods-MidtermPlaylist/Pods-MidtermPlaylist.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				74A383D3230F79B40005BDE8 /* HttpClinet.swift */,
 				74A383D1230F79870005BDE8 /* PlaylistRequest.swift */,
 				74A383D5230F8AE20005BDE8 /* PlaylistProvider.swift */,
+				74CC5430230FDEF7004D2677 /* Playlist.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				74A383D2230F79870005BDE8 /* PlaylistRequest.swift in Sources */,
 				74A383DE230FAAFF0005BDE8 /* SongTableViewCell.swift in Sources */,
 				74A383D9230F96CC0005BDE8 /* ExtensionData.swift in Sources */,
+				74CC5431230FDEF7004D2677 /* Playlist.swift in Sources */,
 				74A383D4230F79B40005BDE8 /* HttpClinet.swift in Sources */,
 				74A383C0230F78AD0005BDE8 /* AppDelegate.swift in Sources */,
 			);

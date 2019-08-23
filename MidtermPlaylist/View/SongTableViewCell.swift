@@ -26,6 +26,23 @@ class SongTableViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func setupCell(name: String, imageString: String, isLike: Bool) {
+        songImageView.loadImage(urlString: imageString)
+        songNameLabel.text = name
+        updateIslike(isLike: isLike)
+    }
+    
+    func updateIslike(isLike: Bool) {
+        if isLike {
+            likeButton.setImage(UIImage.asset(ImageAsset.heartFill)?.withRenderingMode(.alwaysTemplate), for: .normal)
+            likeButton.imageView?.tintColor = UIColor.red
+            
+        } else {
+            likeButton.setImage(UIImage.asset(ImageAsset.heart)?.withRenderingMode(.alwaysTemplate), for: .normal)
+            likeButton.imageView?.tintColor = UIColor.black
+        }
+    }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

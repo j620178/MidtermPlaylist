@@ -43,7 +43,7 @@ enum PlaylistRequest: RestAPIRequest {
         }
     }
     
-    var endPoint: String {
+    var url: String {
         switch self {
         case .getToken:
             return "https://account.kkbox.com/oauth2/token"
@@ -56,8 +56,7 @@ enum PlaylistRequest: RestAPIRequest {
         }
     }
     
-    private func createBody(with parameters: [String: String]?,
-                            boundary: String) throws -> Data {
+    private func createBody(with parameters: [String: String]?, boundary: String) throws -> Data {
         var body = Data()
         
         if parameters != nil {

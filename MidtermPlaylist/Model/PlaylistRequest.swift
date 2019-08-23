@@ -12,7 +12,7 @@ enum PlaylistRequest: RestAPIRequest {
     
     case getToken
     
-    case getPlaylist(accessToken: String, offset: String)
+    case getPlaylist(accessToken: String, offset: String?)
     
     var header: [String: String] {
         switch self {
@@ -48,7 +48,11 @@ enum PlaylistRequest: RestAPIRequest {
         case .getToken:
             return "https://account.kkbox.com/oauth2/token"
         case .getPlaylist(_, let offset):
-            return "https://api.kkbox.com/v1.1/new-hits-playlists/DZrC8m29ciOFY2JAm3/tracks?territory=TW&offset=\(offset)&limit=20"
+            if let offset = offset {
+                return offset
+            } else {
+                return "https://api.kkbox.com/v1.1/new-hits-playlists/DZrC8m29ciOFY2JAm3/tracks?territory=TW&offset=0&limit=20"
+            }
         }
     }
     

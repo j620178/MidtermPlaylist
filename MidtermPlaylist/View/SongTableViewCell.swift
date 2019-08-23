@@ -17,8 +17,10 @@ class SongTableViewCell: UITableViewCell {
     @IBOutlet weak var likeButton: UIButton!
     
     @IBAction func clickLikeButton(_ sender: UIButton) {
-        print(123)
+        handler?(self)
     }
+    
+    var handler: ((SongTableViewCell) -> Void)?
     
     override func awakeFromNib() {
         super.awakeFromNib()

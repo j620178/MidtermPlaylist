@@ -23,6 +23,7 @@ struct TokenInfo: Decodable {
 struct Playlist: Decodable {
     var data: [Song]
     var paging: PagingInfo
+    var summary: Summary
 }
 
 struct Song: Decodable {
@@ -45,6 +46,10 @@ struct PagingInfo: Decodable {
     let limit: Int
     let previous: String?
     let next: String?
+}
+
+struct Summary: Decodable {
+    let total: Int
 }
 
 class PlaylistProvider {
@@ -70,8 +75,8 @@ class PlaylistProvider {
         }
     }
     
-    func getPlaylist(offset: Int, completion: @escaping (Result<Playlist, RestAPIError>) -> Void) {
-        HttpClinet.shared.request(PlaylistRequest.getPlaylist(accessToken: "zKAFsLwvMpGpiyIqsw7YtQ==", offset: "\(offset)").makeRequest()) { [weak self] result in
+    func getPlaylist(offset: String?, completion: @escaping (Result<Playlist, RestAPIError>) -> Void) {
+        HttpClinet.shared.request(PlaylistRequest.getPlaylist(accessToken: "zKAFsLwvMpGpiyIqsw7YtQ==", offset: offset).makeRequest()) { [weak self] result in
             
             guard let strongSelf = self else { return }
             
@@ -79,8 +84,6 @@ class PlaylistProvider {
                 
             case .success(let data):
                 do {
-                    let jsonData = try? JSONSerialization.jsonObject(with: data, options: [])
-                    print(jsonData)
                     let response = try strongSelf.decoder.decode(Playlist.self, from: data)
                     completion(Result.success(response))
                 } catch {

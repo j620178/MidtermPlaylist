@@ -1,0 +1,20 @@
+PODS:
+  - ESPullToRefresh (2.9)
+  - Kingfisher (5.7.0)
+
+DEPENDENCIES:
+  - ESPullToRefresh
+  - Kingfisher (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - ESPullToRefresh
+    - Kingfisher
+
+SPEC CHECKSUMS:
+  ESPullToRefresh: ce058a36454a5032519cc9d8b45da217728cf104
+  Kingfisher: c7d211b54f1f30d8060aadab177d52b4349c825b
+
+PODFILE CHECKSUM: 99398d0a98d3c543d6ab4dba59bdbb19b387dadc
+
+COCOAPODS: 1.7.5

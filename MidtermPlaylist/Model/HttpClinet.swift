@@ -46,9 +46,6 @@ extension RestAPIRequest {
         request.allHTTPHeaderFields = header
         request.httpMethod = method
         request.httpBody = body
-        
-        print(url)
-        print(header)
 
         return request
     }
@@ -67,8 +64,6 @@ class HttpClinet {
             let httpResponse = response as! HTTPURLResponse
             
             let statusCode = httpResponse.statusCode
-            
-            print(data)
             
             switch statusCode {
             case 200..<300: completion(Result.success(data!))
